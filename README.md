@@ -1,4 +1,27 @@
 mapOverlay
 ==========
 
-mapOverlay Object for google maps,  allow to show dynamic HTML as infowindow
+override the default Overlay Object of google maps, can be used to display HTML infowindow on marker instead of default infowindow
+
+
+init :
+
+var Overlay = new mapOverlay({
+  'left': -125, // position
+  'top': -50
+});
+
+
+how to use :
+
+// set HTML content
+Overlay.setContent(infoWindow);
+
+// set position
+Overlay.setPositionFromMarker(marker.getPosition());
+
+// attach on map
+Overlay.setMap(map);
+
+//clear overlay
+Overlay.setMap(null);
