@@ -13,7 +13,6 @@ var Overlay = new mapOverlay({
   'top': -50
 });
 
-
 // set HTML content
 Overlay.setContent(infoWindow);
 
