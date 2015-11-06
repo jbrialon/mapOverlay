@@ -25,3 +25,31 @@ Overlay.setMap(map);
 //clear overlay
 Overlay.setMap(null);
 ```
+
+
+###use with require :
+
+```javascript
+define(['mapOverlay'], function (MapOverlay) {
+
+    this.overlay = new MapOverlay({
+      'left': 0, // position
+      'top': -15
+    });
+
+    // set HTML content
+    this.overlay.setContent(infoWindow);
+
+    // set position
+    this.overlay.setPositionFromMarker(marker.getPosition());
+
+    // attach on map
+    this.overlay.setMap(this.map);
+})}
+```
+
+dependancies :
+    - [require.js](http://requirejs.org/docs/download.html)
+    - [underscorejs](http://underscorejs.org/)
+    - [async plugin](https://github.com/millermedeiros/requirejs-plugins)
+
