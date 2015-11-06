@@ -27,7 +27,7 @@ Overlay.setMap(null);
 ```
 
 
-###use with require :
+###use with require.js :
 
 ```javascript
 define(['mapOverlay'], function (MapOverlay) {
@@ -48,8 +48,5 @@ define(['mapOverlay'], function (MapOverlay) {
 })}
 ```
 
-dependancies :
-    - [require.js](http://requirejs.org/docs/download.html)
-    - [underscorejs](http://underscorejs.org/)
-    - [async plugin](https://github.com/millermedeiros/requirejs-plugins)
+dependancies :[require.js](http://requirejs.org/docs/download.html), [underscorejs](http://underscorejs.org/), [async plugin](https://github.com/millermedeiros/requirejs-plugins)
 
